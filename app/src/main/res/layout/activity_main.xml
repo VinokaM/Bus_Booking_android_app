@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/use"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="welcome"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#ffaa00"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email"
+            android:paddingLeft="25dp"
+            android:layout_margin="20dp"
+            android:id="@+id/email"
+            android:background="@drawable/text_a"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="password"
+            android:paddingLeft="25dp"
+            android:layout_margin="20dp"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:background="@drawable/text_a"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/pBar"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="login"
+            android:id="@+id/login"
+            android:background="@drawable/dash_back"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do not have an account?"
+            android:id="@+id/loginText"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

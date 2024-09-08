@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateBus">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#ffaa00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update your bus"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/section"
+            android:padding="20dp"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/etBusNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Bus Number"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:background="@drawable/text_a"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/etStartCity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Start City"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:background="@drawable/text_a"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/etEndCity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="End City"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:background="@drawable/text_a"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/etSeatCount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Seat Count"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:background="@drawable/text_a"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Time"
+                android:id="@+id/etTime"
+                android:paddingLeft="20dp"
+                android:background="@drawable/text_a"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Save"
+                android:background="@drawable/dash_back"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

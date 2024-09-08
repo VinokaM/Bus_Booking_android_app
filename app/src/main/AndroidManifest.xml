@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".feedback"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC5i0FK9iY1rcqKucJWw_QfbCxW7PVNM54" />
+
+        <activity
+            android:name=".Location"
+            android:exported="false" />
+        <activity
+            android:name=".updateBus"
+            android:exported="false" />
+        <activity
+            android:name=".usersBus"
+            android:exported="false" />
+        <activity
+            android:name=".AllBus"
+            android:exported="false" />
+        <activity
+            android:name=".AddBus"
+            android:exported="false" />
+        <activity
+            android:name=".searchBus"
+            android:exported="false" />
+        <activity
+            android:name=".bookBus"
+            android:exported="false" />
+        <activity
+            android:name=".splashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

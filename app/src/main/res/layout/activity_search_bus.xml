@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchBus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find your bus"
+                android:textSize="25dp"
+                android:layout_marginTop="25dp"
+                android:textColor="#ffaa00"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter bus number or start city"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:drawablePadding="8dp"
+                    android:background="@drawable/text_a"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/dash_back"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchResults"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvNoResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No buses found."
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
